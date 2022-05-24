@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
+		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
                     this.audio.play();
 			
                   console.log(e)
@@ -41,7 +41,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    dragon.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
+		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -54,7 +54,7 @@
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
                     let tank = document.querySelector('#tank-model')
-		    dragon.removeAttribute('animation-mixer');
+		    tank.removeAttribute('animation-mixer');
                 }.bind(this));
 		
             }
