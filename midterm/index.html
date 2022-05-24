@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    dragon.setAttribute('animation-mixer', "clip: Tank_001; loop: repeat;");
+		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: repeat;");
                     this.audio.play();
 			
                   console.log(e)
@@ -41,7 +41,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    dragon.setAttribute('animation-mixer', "clip: Tank_001; loop: repeat;");
+		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: repeat;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -67,12 +67,12 @@
     <a-scene renderer="colorManagement: true">
        <a-assets>
         <a-asset-item id="tank" response-type="arraybuffer" src="./Tanks.glb"></a-asset-item>
-        <audio id="tanksound" src="/johnevenezertonga.github.io/midterm/assets/Tank sound effect.mp3"></audio>
+        <audio id="tanksound" src="./assets/Tank sound effect.mp3"></audio>
       </a-assets>
       <a-entity event-listener id="tank-model"  
         gltf-model="#tank" 
         scale=".1 .1 .1" 
-        position = "0 0 -20" 
+        position = "0 0 20" 
         rotation="0 0 0" 
       >
         <a-text id="tankText" value="ANG TANKE NI TONGA" align="center" color="#FFF" visible="false" position="5 5 6" scale="20 20 20"
