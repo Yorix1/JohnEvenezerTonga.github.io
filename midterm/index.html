@@ -15,12 +15,16 @@
 		
                     let tank = document.querySelector('#tank-model')
 		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
-			function myAudio(){
-				this.audio.play();
-			}
-			function audioTime(){
-				this.audio.setTimeout (myAudio, 3000);
-			}
+			
+			window.setTimeout(function () {
+            			this.audio.play();
+      			  }, 2000); 
+// 			function myAudio(){
+// 				this.audio.play();
+// 			}
+// 			function audioTime(){
+// 				this.audio.setTimeout (myAudio, 3000);
+// 			}
 			// this.audio.stop();
                   console.log(e)
                 }.bind(this));
@@ -85,7 +89,7 @@
 		color="#FFF" 
 		visible="false" 
 		position="-2.073 20 -10" 
-		scale="20 20 20"
+		scale="50 50 50"
 		 rotation="0 0 0" 
 		geometry="primitive: plane; width: 2.50" 
 		material="color: #000000">
