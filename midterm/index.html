@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: twice;");
+		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -41,7 +41,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let tank = document.querySelector('#tank-model')
-		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: twice;");
+		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -78,6 +78,7 @@
         <a-text id="tankText" 
 		value="ANG TANKE NI TONGA"  
 		color="#FFF" 
+		align= "center"
 		visible="false" 
 		position="2 15 3" 
 		scale="20 20 20"
