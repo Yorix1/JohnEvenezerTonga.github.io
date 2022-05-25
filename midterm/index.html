@@ -15,8 +15,8 @@
 		
                     let tank = document.querySelector('#tank-model')
 		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
-			function audioTime(){
 			 this.audio.play();
+			function audioTime(){
 				this.audio.setTimeout (audioTime, 3000);
 			 this.audio.stop();
 			}
