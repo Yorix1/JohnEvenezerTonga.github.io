@@ -15,16 +15,16 @@
 		
                     let tank = document.querySelector('#tank-model')
 		    tank.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
-			
+			this.audioTime();
 			let audioTank = document.querySelector('#tanksound');
 			function myAudio(){
 				this.audio.play();
 			}
 			function audioTime(){
 				audioTank = setTimeout (myAudio, 3000);
-// 				this.audio.stop();
+				this.audio.stop();
 			}
-			audioTime();
+			
                   console.log(e)
                 }.bind(this));
 		
@@ -87,7 +87,7 @@
 		value="ANG TANKE NI TONGA"  
 		color="#FFF" 
 		visible="false" 
-		position="-2.073 0 0" 
+		position="-2.073 50 20" 
 		scale="20 20 20"
 		 rotation="0 180 0" 
 		geometry="primitive: plane; width: 2.50" 
